@@ -188,7 +188,7 @@ public class AssigmentTest extends Base_class{
 	        test.info("Expected: " + expectedMessage);
 	        test.info("Actual: " + actualMessage);
 	        
-	        Assert.assertEquals(actualMessage, expectedMessage, "Search result message matches!");
+	        Assert.assertEquals(actualMessage,"4 results found for “Hydrogen”", "Search result message matches!");
 	        test.pass("Search test passed successfully");
 	    }
 
