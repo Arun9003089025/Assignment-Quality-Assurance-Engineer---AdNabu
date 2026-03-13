@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AdNabu Test Suite" verbose="1">
+
+    <test name="AdNabu Regression Tests" preserve-order="true">
+        <classes>
+            <class name="testcases.AssigmentTest">
+                <methods>
+                    <include name="tc01_SuccessfulSearch"/>
+                    <include name="tc02_InvalidSearch"/>
+                    <include name="tc03_EdgeCaseLongSearch"/>
+                    <include name="tc04_Positive_FilterAndAddToCart"/>
+                    <include name="tc05_Negative_Buy_it_now_btnDisabled"/>
+                    <include name="tc06_Edgecase_increase_Qty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
