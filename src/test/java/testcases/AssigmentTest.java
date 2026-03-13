@@ -333,14 +333,14 @@ public class AssigmentTest extends Base_class{
 	                js.executeScript("arguments[0].click();", plusBtn);
 	            }
 
-//	            // Check for error message (optional)
-//	            try {
-//	                WebElement errorMsg = wait.until(ExpectedConditions.visibilityOf(
-//	                    driver.findElement(By.xpath("//small[@class='cart-item__error-text']"))));
-//	                test.info("Error message displayed: " + errorMsg.getText());
-//	            } catch (Exception e) {
-//	                test.info("No error message appeared, checking final quantity");
-//	            }   
+	            // Check for error message (optional)
+	            try {
+	                WebElement errorMsg = wait.until(ExpectedConditions.visibilityOf(
+	                    driver.findElement(By.xpath("//small[@class='cart-item__error-text']"))));
+	                test.info("Error message displayed: " + errorMsg.getText());
+	            } catch (Exception e) {
+	                test.info("No error message appeared, checking final quantity");
+            }   
 
 	            // Get the final quantity
 	            WebElement qtyElement = driver.findElement(By.id("Drawer-quantity-1"));
